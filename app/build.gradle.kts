@@ -22,8 +22,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+    signingConfigs {
+        create("debugConfig") {
+            storeFile = file("${rootDir}/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
     }
 
     buildTypes {
@@ -35,6 +40,7 @@ android {
             )
         }
         debug {
+            signingConfig = signingConfigs.getByName("debugConfig")
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-debug"
         }
@@ -48,6 +54,12 @@ android {
                 "META-INF/LICENSE"
             )
         }
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 

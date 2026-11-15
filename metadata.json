@@ -1,0 +1,8 @@
+{
+  "name": "TaruTV",
+  "description": "Reproductor Android de televisión en directo para listas IPTV M3U y M3U8.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

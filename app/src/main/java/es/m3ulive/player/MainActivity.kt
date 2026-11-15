@@ -138,7 +138,7 @@ class MainActivity : Activity() {
             layoutParams = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f)
         }
         titleColumn.addView(TextView(this).apply {
-            text = "M3U LIVE TV"
+            text = "TaruTV"
             textSize = 21f
             typeface = Typeface.create("sans-serif-black", Typeface.NORMAL)
             setTextColor(Color.WHITE)
@@ -162,7 +162,7 @@ class MainActivity : Activity() {
             setHintTextColor(Color.rgb(125, 143, 161))
             setTextColor(Color.WHITE)
             textSize = 15f
-            singleLine = true
+            setSingleLine(true)
             imeOptions = EditorInfo.IME_ACTION_SEARCH
             setPadding(dp(14), 0, dp(14), 0)
             background = roundedDrawable(Color.rgb(23, 33, 46), dp(11))

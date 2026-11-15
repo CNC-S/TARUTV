@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "M3ULiveTV"
+rootProject.name = "TaruTV"
 include(":app")
