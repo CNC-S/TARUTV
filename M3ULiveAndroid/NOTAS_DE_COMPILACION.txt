@@ -1,0 +1,14 @@
+Compilación
+===========
+
+Este paquete contiene el proyecto fuente Android. Para generar el APK:
+
+1) Abrir la carpeta M3ULiveAndroid con Android Studio.
+2) Instalar SDK Platform 36 y usar JDK 17.
+3) Sincronizar Gradle para descargar las dependencias.
+4) Ejecutar Build > Build APK(s).
+
+El APK de depuración estará en:
+app/build/outputs/apk/debug/app-debug.apk
+
+No se ha adjuntado APK porque el entorno de creación no tiene Android SDK ni Gradle y no ha sido posible ejecutar una compilación real aquí.

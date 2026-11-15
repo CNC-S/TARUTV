@@ -1,0 +1,8 @@
+ANÁLISIS TÉCNICO DE base.apk
+
+- La APK aportada es un paquete compilado, no un proyecto Android con su código fuente original.
+- Se identifican referencias al paquete com.nst.smartersplayer.
+- En el contenido aparecen referencias de ExoPlayerLib 2.14.0 y 2.15.0.
+- También contiene bibliotecas nativas relacionadas con IJKPlayer y FFmpeg, entre otras.
+- La aplicación de esta entrega no reutiliza ni modifica el código binario propietario de esa APK. Se ha preparado una implementación nueva y reducida, tomando como referencia el objetivo funcional solicitado: televisión en directo mediante M3U/M3U8.
+- No se ha intentado reproducir ninguna parte de Películas o Series.
